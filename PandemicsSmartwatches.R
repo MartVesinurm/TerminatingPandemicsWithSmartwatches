@@ -42,7 +42,7 @@ ancestral_cohort <- data.frame(
   Symptomatic = rbinom(1000, 1, prob = 0.844),
   Day_of_symptom_onset = 60,
   Detected_by_smartwatch = rbinom(1000, 1, prob = 0.88),
-  Day_of_smartwatch_detection = 30,
+  Day_of_smartwatch_detection = 30, #Adding a note mostly for myself, for clarity, this variable means "How many days before symptom onset decetion occurs divided by 10"
   Time_from_onset_to_testing = rnorm(1000, mean = 21.7, sd = 0.9),
   R = rgamma(1000, shape = 13.608908, rate = 5.339734)
 )
