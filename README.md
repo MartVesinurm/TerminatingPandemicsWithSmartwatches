@@ -1,5 +1,4 @@
 # TerminatingPandemicsWithSmartwatches
-R code for the simulation model presented in...
 
 For replication, please follow these steps:
 
