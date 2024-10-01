@@ -12,7 +12,7 @@ Published in: Currently in peer-review.
 DOI: TBA
 
 *************************************
-All script are mostly self-contained, however some you might have to install packages to have access to all the used libraries. Please refer to the manuscript for ellaboration on baseline assumptions and arguments behind them.
+All script are mostly self-contained, however, you might have to install packages to have access to all the used libraries. Please refer to the manuscript for ellaboration on baseline assumptions and arguments behind them.
 
 To generate the main results under baseline assumptions as they are presented in Figure 2 and Table 2 in the manuscript, run (source) the R script "Figure 2". Then, to generate Figure 2, you must simply run the ggplot object "Figure2". The numerical results are stored in the following dataframes: **Covids_66**(For Ancestral, Delta, and Omircron strains of COVID-19 assuming 66% withdrawal rate), **Covids_75** (For Ancestral, Delta, and Omircron strains of COVID-19 assuming 75% withdrawal rate), **Influenzas_66** (For Pandemic and Seasonal strains of Influenza assuming 66% withdrawal rate), and **Influenzas_75** (For Pandemic and Seasonal strains of Influenza assuming 75% withdrawal rate).
 
