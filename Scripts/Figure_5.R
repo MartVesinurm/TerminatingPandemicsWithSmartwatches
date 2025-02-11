@@ -515,20 +515,19 @@ seasonal_heatmap <- ggplot(seasonal_combinations, aes(detection, withdrawal*100,
   geom_contour(colour="black") +
   geom_contour(aes(z = R_redc_perc), breaks = 25, colour = "black", linewidth = 2) +
   geom_text_contour(aes(z = R_redc_perc),  breaks = c(10,20,25,30,40,50), stroke = 0.15, rotate=FALSE, skip=0, size=7)+
-  scale_fill_gradient2('pi0', low = "#CC3311", mid = "#AA8080", high = "#88CCEE", midpoint = 30)+ ##ADJUST COLOR
+  scale_fill_gradient2('% Reduction', low = "#CC3311", mid = "#AA8080", high = "#88CCEE", midpoint = 30)+ ##ADJUST COLOR
   scale_y_continuous(expand = c(0, 0), n.breaks = 6)+
   scale_x_continuous(expand = c(0, 0), n.breaks = 5)+
   labs(
     x = "Time from exposure to smartwatch detection (days)",
     y = "Effective reduction of social contacts (%)",
-    fill = "% reduction in effective reproduction number"
+    fill = "% reduction in effective reproduction number",
   ) +
   theme_minimal() +
   theme(panel.border = element_blank(), panel.grid.major = element_blank(),
-        legend.position = "none",
         axis.line.x = element_line(color="black"),
         axis.line.y = element_line(color="black"),       
-        text = element_text(size = 20),  # Adjust text size for readability
+        text = element_text(size = 15),  # Adjust text size for readability
         plot.title = element_text(size = 20, face = "bold"),  # Title styling
         plot.subtitle = element_text(size = 20, face = "italic"),  # Subtitle styling
         axis.title = element_text(size = 20, face = "bold"),  # Axis title styling
@@ -543,4 +542,4 @@ Figure5 <- (ancestral_heatmap|
     pandemic_heatmap|
     seasonal_heatmap) + plot_layout(axis_titles = "collect")
 Figure5
-#ggsave("240930_Figure5.jpeg")
+#ggsave("241204_Figure5.jpeg")

@@ -535,7 +535,7 @@ withdrawal_covid_ggplot <- ggplot() +
   scale_x_continuous(expand= c(0,0), limits = c(0,8), breaks= c(0,2,4,6,8)) +
   scale_y_continuous(expand= c(0,0), limits = c(0.4, 1), labels = scales::percent)  +
   labs(title = "",
-       x = "Time from exposure (days)",
+       x = "Time from exposure to smartwatch detection (days)",
        y = "Required reduction in social contacts (%)") +
   guides(
     color = guide_legend(order = 2, title = "Point Types"),
@@ -587,7 +587,7 @@ withdrawal_influenza_ggplot <- ggplot() +
   scale_x_continuous(expand= c(0,0), limits = c(0,8), breaks= c(0,2,4,6,8)) +
   scale_y_continuous(expand= c(0,0), limits = c(0.4, 1), labels = scales::percent)  +  
   labs(title = "",
-       x = "Time from exposure (days)",
+       x = "Time from exposure to smartwatch detection (days)",
        y = "") +
   guides(
     color = guide_legend(order = 2, title = "Point Types"),
@@ -610,5 +610,5 @@ withdrawal_influenza_ggplot <- ggplot() +
 withdrawal_influenza_ggplot
 Figure4 <- withdrawal_covid_ggplot + withdrawal_influenza_ggplot
 Figure4
-#ggsave("240929_Figure4.jpeg")
+#ggsave("250122_Figure4.jpeg")
 

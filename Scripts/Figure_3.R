@@ -449,7 +449,7 @@ uncertainty_covid_ggplot <- ggplot() +
   scale_x_continuous(expand= c(0,0), limits = c(0, 10), breaks= c(0,2,4,6,8,10)) +
   scale_y_continuous(expand= c(0,0), limits = c(0, 1), labels = scales::percent)  +  
   labs(title = "",
-       x = "Time from Exposure (Days)",
+       x = "Time from exposure to smartwatch detection (days)",
        y = "Probability of the effective reproduction
        number being under 1 (%)") +
   guides(
@@ -484,7 +484,7 @@ uncertainty_influenza_ggplot <- ggplot() +
   scale_x_continuous(expand= c(0,0), limits = c(0, 10), breaks= c(0,2,4,6,8,10)) +
   scale_y_continuous(expand= c(0,0), limits = c(0, 1), labels = scales::percent)  +  
   labs(title = "",
-       x = "Time from Exposure (Days)",
+       x = "Time from exposure to smartwatch detection (days)",
        y = "") +
   guides(
     color = guide_legend(order = 2, title = "Point Types"),
@@ -505,5 +505,5 @@ uncertainty_influenza_ggplot <- ggplot() +
 
 Figure3 <- uncertainty_covid_ggplot + uncertainty_influenza_ggplot
 Figure3 # Run this for figure 3
-#ggsave("240929_Figure3.jpeg")
+#ggsave("250122_Figure3.jpeg")
 #Check for numerical results in "uncertainty_influenza" and "uncertainty_covid"
